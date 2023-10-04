@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: aqua;
+}
+
+button.cart{
+    position: relative;
+    margin: 12px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+a.navbar-brand{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.navbar{
+    margin-bottom: 30px;
+}
+
+.bi-cart2{
+    width: 20px;
+    height: 30px;
+    padding-top: 4px;
+    margin: 2px; 
+}
+
+.cart-amount{
+    position: absolute;
+    width: 20px;
+    top: -22px;
+    right: -7px;
+    font-size: 16px;
+    background-color: rgb(101, 107, 105);
+    color: white;
+    border-radius: 3px;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.cards{
+    display: flex;  
+    justify-content: center;
+    margin-left:  30px; 
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 1000px) {
+    .cards {
+        flex-wrap: wrap; /* Allow cards to wrap to the next line */
+        justify-content: center; /*Space cards evenly*/
+    }
+    .card {
+        flex-basis: calc(50% - 60px); /* Two cards per row with margins */
+        margin-bottom: 20px; /* Add some vertical spacing */
+        
+    }
+}
+@media (max-width: 600px) {
+    .cards {
+        flex-wrap: wrap; /* Allow cards to wrap to the next line */
+        /* justify-content: space-between; Space cards evenly */
+    }
+    .card {
+        flex-basis: calc(75% - 60px); /* Two cards per row with margins */
+        margin-bottom: 20px; /* Add some vertical spacing */
+    }
+}
+
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    margin: 10px;
+    /* gap: 15px; */
+}
+
+.quantity{
+    font-size: 22px;
+}
+
+/* .bi{
+    padding-top: 4px;
+    margin: 2px; 
+} */
+
+.bi-dash-lg{
+    color: red;
+}
+
+.bi-plus-lg{
+    color: green;
+}
+
+.buttons{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    gap: 7px;
+    
+}
+
+button.remove{
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+button.add{
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    padding: 2px;
+}
